@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赵旭 — 营销 × AI 产品</title>
+<meta name="description" content="赵旭，青岛大学纺织科学与工程 2027 届。海信集团国内营销 AI 实习生，用 vibe coding 独立做 AI 产品。先把一个生意跑通，再用 AI 让它跑得更快。">
+<meta name="author" content="赵旭">
+<meta name="theme-color" content="#faf9f7">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="赵旭 — 营销 × AI 产品">
+<meta property="og:description" content="海信集团国内营销 AI 实习生 · 2027 届校招 · 10+ 个 AI 项目。先把一个生意跑通，再用 AI 让它跑得更快。">
+<meta property="og:url" content="https://z15346183030.github.io/resume-site/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%234f46e5'/><text y='72' x='50' font-size='58' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'>赵</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"赵旭","alternateName":"z15346183030","jobTitle":"营销 × AI 产品","alumniOf":{"@type":"CollegeOrUniversity","name":"青岛大学"},"worksFor":{"@type":"Organization","name":"海信集团"},"address":{"@type":"PostalAddress","addressLocality":"青岛","addressCountry":"CN"},"email":"mailto:2210914541@qq.com","url":"https://z15346183030.github.io/resume-site/","sameAs":["https://github.com/z15346183030"],"knowsAbout":["AI 产品","智能体搭建","Prompt 工程","AI 效果评估","大客户销售","GTM","渠道管理","数据分析"]}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --bg:#faf9f7; --surface:#ffffff; --surface-2:#f3f1ec;
+  --border:#e6e2da; --border-strong:#d5cfc4;
+  --text:#17161a; --muted:#6f6b73; --faint:#a09a92;
+  --accent:#4f46e5; --accent-ink:#4338ca; --accent-soft:rgba(79,70,229,.07);
+  --shadow:0 1px 2px rgba(23,22,26,.04), 0 12px 32px -12px rgba(23,22,26,.12);
+  --shadow-lg:0 24px 60px -24px rgba(23,22,26,.28);
+  --green:#16a34a; --green-soft:rgba(22,163,74,.10);
+}
+
+html[data-theme="dark"]{
+  --bg:#0c0c0f; --surface:#141418; --surface-2:#1b1b21;
+  --border:#26262d; --border-strong:#34343d;
+  --text:#f2f0ed; --muted:#8e8a93; --faint:#5f5b64;
+  --accent:#8b85ff; --accent-ink:#a9a4ff; --accent-soft:rgba(139,133,255,.10);
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 12px 32px -12px rgba(0,0,0,.6);
+  --shadow-lg:0 24px 60px -24px rgba(0,0,0,.8);
+  --green:#34d399; --green-soft:rgba(52,211,153,.12);
+}
+
+html{scroll-behavior:smooth; -webkit-text-size-adjust:100%}
+body{
+  font-family:'Inter','Noto Sans SC',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:var(--bg); color:var(--text); line-height:1.65;
+  font-size:15px; -webkit-font-smoothing:antialiased;
+  transition:background .35s ease, color .35s ease;
+}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--accent);color:#fff}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.mono{font-family:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace}
+
+/* ---------- progress ---------- */
+.progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--accent);z-index:300;transition:width .1s linear}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--accent);color:#fff;padding:8px 16px;border-radius:8px;z-index:400}
+.skip:focus{left:16px}
+
+/* ---------- layout ---------- */
+.layout{
+  max-width:1280px;margin:0 auto;padding:0 48px;
+  display:grid;grid-template-columns:400px minmax(0,1fr);gap:72px;
+}
+
+/* ---------- rail ---------- */
+.rail{
+  position:sticky;top:0;height:100vh;
+  display:flex;flex-direction:column;justify-content:space-between;
+  padding:104px 0 56px;
+}
+.eyebrow{
+  font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--faint);margin-bottom:26px;
+  display:flex;align-items:center;gap:10px;
+}
+.eyebrow::before{content:'';width:22px;height:1px;background:var(--border-strong)}
+.rail h1{
+  font-size:clamp(38px,4.2vw,54px);font-weight:700;line-height:1.02;
+  letter-spacing:-.035em;margin-bottom:14px;
+}
+.rail h1 .latin{
+  display:block;font-family:'JetBrains Mono',monospace;
+  font-size:13px;font-weight:400;letter-spacing:.22em;color:var(--faint);
+  margin-top:16px;text-transform:uppercase;
+}
+.rail .role{font-size:17px;font-weight:600;color:var(--text);margin-bottom:12px;letter-spacing:-.01em}
+.rail .role em{font-style:normal;color:var(--accent)}
+.rail .tagline{font-size:14px;color:var(--muted);max-width:min(310px,100%);line-height:1.75}
+.rail .tagline em{
+  font-style:normal;color:var(--text);padding:0 2px;
+  background-image:linear-gradient(transparent 60%,var(--accent-soft) 60%,var(--accent-soft) 96%,transparent 96%);
+}
+.status{
+  display:inline-flex;align-items:center;gap:8px;margin-top:28px;
+  padding:6px 13px 6px 10px;border:1px solid var(--border);border-radius:100px;
+  background:var(--surface);font-size:12px;color:var(--muted);
+}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--green);position:relative;flex:none}
+.dot::after{content:'';position:absolute;inset:-4px;border-radius:50%;background:var(--green-soft);animation:pulse 2.4s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.6);opacity:.9}70%{transform:scale(1.5);opacity:0}100%{opacity:0}}
+
+.rail-nav{margin-top:auto;padding-top:40px}
+.rail-nav a{
+  display:flex;align-items:center;gap:14px;padding:9px 0;
+  font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--faint);transition:color .25s;
+}
+.rail-nav .line{height:1px;width:26px;background:var(--border-strong);transition:all .3s cubic-bezier(.4,0,.2,1)}
+.rail-nav a:hover,.rail-nav a.active{color:var(--text)}
+.rail-nav a.active .line,.rail-nav a:hover .line{width:52px;background:var(--accent)}
+
+.rail-foot{display:flex;align-items:center;gap:16px;padding-top:34px;flex-wrap:wrap}
+.rail-foot a{
+  font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;
+  color:var(--muted);transition:color .2s;
+}
+.rail-foot a:hover{color:var(--accent)}
+.rail-foot .sep{width:3px;height:3px;border-radius:50%;background:var(--border-strong)}
+
+/* ---------- content ---------- */
+.content{padding-bottom:80px;min-width:0}
+section{padding:88px 0 8px}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:34px}
+.sec-num{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--accent);letter-spacing:.1em}
+.sec-title{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase}
+.sec-rule{flex:1;height:1px;background:var(--border);transform:translateY(-3px)}
+
+/* ---------- about ---------- */
+.lead{font-size:19px;line-height:1.75;letter-spacing:-.01em;color:var(--text);margin-bottom:20px}
+.lead strong{
+  font-weight:600;padding:0 2px;
+  background-image:linear-gradient(transparent 58%,var(--accent-soft) 58%,var(--accent-soft) 96%,transparent 96%);
+}
+.about p{color:var(--muted);margin-bottom:15px;font-size:14.5px;max-width:min(64ch,100%)}
+.about p b{color:var(--text);font-weight:600}
+
+.edu{
+  display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+  margin-top:26px;padding:18px 22px;
+  background:var(--surface);border:1px solid var(--border);border-radius:14px;
+}
+.edu .l h4{font-size:14.5px;font-weight:600;margin-bottom:3px}
+.edu .l p{font-size:12.5px;color:var(--muted);margin:0}
+.edu .r{text-align:right;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--faint);line-height:1.9}
+.edu .r b{display:block;color:var(--text);font-size:12.5px;font-family:'Inter','Noto Sans SC',sans-serif;font-weight:600}
+
+.facts{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:0 32px;
+  margin-top:26px;border-top:1px solid var(--border);
+}
+.fact{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--border);font-size:13px}
+.fact dt{color:var(--faint);flex:none}
+.fact dd{color:var(--text);font-weight:500;text-align:right}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}
+.stat{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px 18px}
+.stat .n{font-family:'JetBrains Mono',monospace;font-size:23px;font-weight:500;letter-spacing:-.03em;line-height:1.2}
+.stat .n span{font-size:11px;color:var(--accent);margin-left:1px}
+.stat .l{font-size:11.5px;color:var(--faint);margin-top:4px;letter-spacing:.02em}
+
+/* ---------- timeline ---------- */
+.tl{position:relative;padding-left:26px}
+.tl::before{content:'';position:absolute;left:4px;top:8px;bottom:8px;width:1px;background:var(--border)}
+.tl-item{position:relative;padding-bottom:30px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{
+  content:'';position:absolute;left:-26px;top:7px;width:9px;height:9px;
+  border-radius:50%;background:var(--bg);border:1.5px solid var(--border-strong);
+  transition:all .25s;
+}
+.tl-item:hover::before{border-color:var(--accent);background:var(--accent)}
+.tl-item.now::before{border-color:var(--green);background:var(--green)}
+.tl-top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:2px}
+.tl-item h3{font-size:15.5px;font-weight:600;letter-spacing:-.01em}
+.tl-role{font-size:13px;color:var(--accent);font-weight:500}
+.tl-date{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--faint);letter-spacing:.03em}
+.tl-item ul{list-style:none;margin-top:8px}
+.tl-item li{font-size:13.5px;color:var(--muted);padding-left:15px;position:relative;padding-bottom:5px;line-height:1.7}
+.tl-item li::before{content:'';position:absolute;left:0;top:11px;width:5px;height:1px;background:var(--border-strong)}
+.tl-item li b{color:var(--text);font-weight:600}
+.tl-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:10px}
+.tl-tags span{font-size:10.5px;color:var(--muted);background:var(--surface-2);border:1px solid var(--border);padding:2px 8px;border-radius:5px}
+
+/* ---------- bento ---------- */
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;grid-auto-flow:dense}
+.card{
+  position:relative;grid-column:span 3;
+  background:var(--surface);border:1px solid var(--border);border-radius:16px;
+  padding:24px;cursor:pointer;overflow:hidden;
+  display:flex;flex-direction:column;
+  transition:border-color .28s, transform .28s cubic-bezier(.4,0,.2,1), box-shadow .28s;
+}
+.card::after{
+  content:'';position:absolute;inset:0;border-radius:16px;pointer-events:none;
+  background:radial-gradient(420px circle at var(--mx,50%) var(--my,0%),var(--accent-soft),transparent 65%);
+  opacity:0;transition:opacity .35s;
+}
+.card:hover{border-color:var(--border-strong);transform:translateY(-3px);box-shadow:var(--shadow)}
+.card:hover::after{opacity:1}
+.card .cat{
+  font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--faint);margin-bottom:13px;
+  display:flex;align-items:center;gap:7px;
+}
+.card .cat::before{content:'';width:5px;height:5px;border-radius:1px;background:var(--accent);flex:none}
+.card h3{font-size:17px;font-weight:600;letter-spacing:-.012em;line-height:1.35;margin-bottom:4px;display:flex;align-items:flex-start;gap:8px}
+.card .when{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--faint);margin-bottom:10px}
+.card p{font-size:13px;color:var(--muted);line-height:1.72;flex:1}
+.card .arrow{margin-left:auto;color:var(--faint);font-size:13px;transition:all .25s;flex:none;transform:translateY(2px)}
+.card:hover .arrow{color:var(--accent);transform:translate(2px,-2px)}
+.card .tech{display:flex;flex-wrap:wrap;gap:5px;margin-top:16px}
+.card .tech span{font-size:10.5px;color:var(--muted);background:var(--surface-2);border:1px solid var(--border);padding:2px 8px;border-radius:5px}
+
+/* ---------- open source strip ---------- */
+.os-head{display:flex;align-items:baseline;gap:12px;margin:34px 0 14px}
+.os-head span{font-size:12.5px;font-weight:600;letter-spacing:.04em}
+.os-head i{flex:1;height:1px;background:var(--border);font-style:normal}
+.os{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.os a{
+  display:flex;align-items:baseline;gap:10px;padding:11px 14px;
+  border:1px solid var(--border);border-radius:10px;background:var(--surface);
+  transition:all .22s;font-size:13px;
+}
+.os a:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow)}
+.os .nm{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:500;flex:none}
+.os .ds{font-size:12px;color:var(--muted);line-height:1.5}
+
+/* ---------- skills ---------- */
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.skill{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:22px 24px}
+.skill h3{font-size:13px;font-weight:600;letter-spacing:.02em;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.skill .idx{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--accent)}
+.skill .sub{font-size:11.5px;color:var(--faint);margin-bottom:14px}
+.skill ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.skill li{font-size:12px;color:var(--muted);background:var(--surface-2);border:1px solid var(--border);padding:3px 9px;border-radius:6px}
+
+/* ---------- honors ---------- */
+.honors{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px}
+.honor{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--muted);line-height:1.6}
+.honor::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--accent);margin-top:9px;flex:none;opacity:.6}
+
+/* ---------- contact ---------- */
+.contact-wrap{border-top:1px solid var(--border);margin-top:88px;padding-top:56px}
+.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:8px}
+.clink{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:16px 18px;border:1px solid var(--border);border-radius:12px;
+  background:var(--surface);transition:all .25s;
+}
+.clink:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow)}
+.clink .k{font-size:11px;color:var(--faint);letter-spacing:.06em;text-transform:uppercase;font-family:'JetBrains Mono',monospace}
+.clink .v{font-size:13.5px;font-weight:500;margin-top:3px;word-break:break-all}
+.clink .go{color:var(--faint);font-size:14px;transition:all .2s}
+.clink:hover .go{color:var(--accent);transform:translate(2px,-2px)}
+
+footer{
+  display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+  margin-top:48px;padding:26px 0 0;border-top:1px solid var(--border);
+  font-size:11.5px;color:var(--faint);
+}
+footer .mono{font-size:10.5px;letter-spacing:.06em}
+
+/* ---------- mail menu ---------- */
+.clink.email{grid-column:span 2;position:relative;align-items:flex-end}
+.clink.email .v{white-space:nowrap;overflow-wrap:normal;word-break:keep-all}
+.mailwrap{position:relative;display:inline-block;flex:none}
+.mailbtn{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:7px 14px;border-radius:100px;cursor:pointer;
+  border:1px solid var(--border);background:var(--surface-2);
+  font-family:inherit;font-size:12.5px;font-weight:600;color:var(--text);
+  transition:all .2s;white-space:nowrap;
+}
+.mailbtn:hover{border-color:var(--accent);color:var(--accent)}
+.mailbtn .caret{font-size:9px;color:var(--faint);transition:transform .2s}
+.mailbtn[aria-expanded="true"] .caret{transform:rotate(180deg)}
+.mailmenu{
+  position:absolute;bottom:calc(100% + 12px);right:0;width:242px;
+  max-height:70vh;overflow-y:auto;
+  padding:6px;background:var(--surface);border:1px solid var(--border);border-radius:12px;
+  box-shadow:var(--shadow-lg);z-index:60;
+  opacity:0;visibility:hidden;pointer-events:none;transform:translateY(6px);
+  transition:opacity .2s,transform .2s,visibility .2s;
+}
+.mailmenu.open{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0)}
+.mailmenu button{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;
+  padding:9px 12px;border:0;border-radius:8px;background:transparent;
+  font-family:inherit;font-size:13px;color:var(--text);cursor:pointer;text-align:left;
+  transition:background .15s;
+}
+.mailmenu button:hover{background:var(--surface-2)}
+.mailmenu button .h{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--faint);letter-spacing:.05em}
+.mailmenu hr{border:0;border-top:1px solid var(--border);margin:5px 4px}
+
+/* ---------- theme toggle ---------- */
+.theme-toggle{
+  position:fixed;right:26px;bottom:26px;z-index:200;
+  width:44px;height:44px;border-radius:50%;
+  border:1px solid var(--border);background:var(--surface);color:var(--text);
+  cursor:pointer;display:grid;place-items:center;
+  box-shadow:var(--shadow);transition:all .25s;
+}
+.theme-toggle:hover{transform:rotate(18deg) scale(1.06);border-color:var(--accent);color:var(--accent)}
+.theme-toggle svg{width:18px;height:18px}
+html[data-theme="light"] .i-moon{display:block}
+html[data-theme="light"] .i-sun{display:none}
+html[data-theme="dark"] .i-moon{display:none}
+html[data-theme="dark"] .i-sun{display:block}
+
+/* ---------- modal ---------- */
+.overlay{
+  position:fixed;inset:0;z-index:250;display:none;
+  background:rgba(20,18,24,.42);backdrop-filter:blur(10px);
+  padding:28px;overflow-y:auto;
+}
+html[data-theme="dark"] .overlay{background:rgba(0,0,0,.62)}
+.overlay.open{display:flex;align-items:flex-start;justify-content:center}
+.sheet{
+  background:var(--surface);border:1px solid var(--border);border-radius:20px;
+  width:100%;max-width:720px;padding:38px 40px 34px;position:relative;
+  margin:auto;box-shadow:var(--shadow-lg);
+  animation:rise .32s cubic-bezier(.2,.8,.2,1);
+}
+@keyframes rise{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:none}}
+.sheet .close{
+  position:absolute;top:18px;right:18px;width:32px;height:32px;border-radius:8px;
+  border:1px solid var(--border);background:var(--surface-2);color:var(--muted);
+  cursor:pointer;font-size:17px;line-height:1;display:grid;place-items:center;transition:all .2s;
+}
+.sheet .close:hover{color:var(--text);border-color:var(--accent)}
+.sheet .cat{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.sheet h2{font-size:25px;font-weight:700;letter-spacing:-.025em;margin-bottom:6px;padding-right:36px}
+.sheet .when{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--faint);margin-bottom:14px}
+.sheet .desc{font-size:14px;color:var(--muted);line-height:1.8}
+.sheet .actions{display:flex;gap:8px;margin:20px 0 6px;flex-wrap:wrap}
+.sheet .actions a{font-size:12.5px;font-weight:600;padding:8px 16px;border-radius:8px;background:var(--text);color:var(--bg);transition:all .2s}
+.sheet .actions a:hover{opacity:.85;transform:translateY(-1px)}
+.sheet h4{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);margin:26px 0 10px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+.sheet ul{list-style:none}
+.sheet li{font-size:13px;color:var(--muted);line-height:1.72;padding:4px 0 4px 16px;position:relative}
+.sheet li::before{content:'';position:absolute;left:2px;top:13px;width:5px;height:1px;background:var(--accent)}
+.sheet li b{color:var(--text);font-weight:600}
+.sheet .tech{display:flex;flex-wrap:wrap;gap:5px;margin-top:22px}
+.sheet .tech span{font-size:11px;color:var(--accent);background:var(--accent-soft);padding:3px 9px;border-radius:5px}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media(max-width:1120px){
+  .layout{grid-template-columns:1fr;gap:0;padding:0 32px;max-width:880px}
+  .rail{position:relative;height:auto;padding:88px 0 0}
+  .rail-nav{display:none}
+  .rail .tagline{max-width:min(48ch,100%)}
+  .rail-foot{padding-top:26px}
+  .bento{grid-template-columns:repeat(2,1fr)}
+  .card{grid-column:span 1}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  section{padding-top:64px}
+  .contact-wrap{margin-top:64px}
+}
+@media(max-width:640px){
+  .layout{padding:0 20px}
+  .rail{padding-top:64px}
+  .bento,.skills,.os{grid-template-columns:1fr}
+  .card{grid-column:span 1}
+  .clink.email{grid-column:span 1;align-items:flex-start;flex-wrap:wrap;gap:12px}
+  .facts{grid-template-columns:1fr;gap:0}
+  .contact-grid{grid-template-columns:1fr}
+  .honors{grid-template-columns:1fr}
+  .edu .r{text-align:left}
+  .sheet{padding:30px 22px 26px}
+  .sheet h2{font-size:21px}
+  .theme-toggle{right:16px;bottom:16px;width:40px;height:40px}
+  .lead{font-size:17px}
+}
+
+/* ---------- print ---------- */
+@media print{
+  :root{--bg:#fff;--surface:#fff;--surface-2:#f5f5f5;--text:#000;--muted:#333;--faint:#666;--border:#ddd;--border-strong:#bbb}
+  body{font-size:10.5pt}
+  .progress,.theme-toggle,.skip,.overlay,.rail-nav,.mailmenu,.card .arrow{display:none!important}
+  .layout{display:block;max-width:none;padding:0}
+  .rail{position:static;height:auto;padding:0 0 18px;border-bottom:1px solid #ccc;margin-bottom:14px}
+  .rail h1{font-size:24pt}
+  .content{padding:0}
+  section{padding:14px 0 0;break-inside:avoid}
+  .bento{grid-template-columns:repeat(2,1fr)}
+  .card,.os a{break-inside:avoid;box-shadow:none!important;transform:none!important}
+  .card{grid-column:span 1}
+  .rv{opacity:1!important;transform:none!important}
+  a{color:#000}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+<a class="skip" href="#about">跳到主要内容</a>
+
+<div class="layout">
+
+  <!-- ================= LEFT RAIL ================= -->
+  <aside class="rail">
+    <div>
+      <div class="eyebrow">Portfolio · 2027 校招</div>
+      <h1>赵旭<span class="latin">Zhao Xu</span></h1>
+      <div class="role">营销 <em>×</em> AI 产品</div>
+      <p class="tagline">先把一个生意跑通，再用 AI 让它<em>跑得更快</em> —— 这是我一贯的做法。</p>
+      <div class="status"><span class="dot"></span>2027 届校招 · 2027.07 可到岗</div>
+    </div>
+
+    <nav class="rail-nav" id="railNav">
+      <a href="#about" class="active"><span class="line"></span>关于</a>
+      <a href="#exp"><span class="line"></span>经历</a>
+      <a href="#work"><span class="line"></span>项目</a>
+      <a href="#skills"><span class="line"></span>技能</a>
+      <a href="#contact"><span class="line"></span>联系</a>
+    </nav>
+
+    <div class="rail-foot">
+      <a href="https://github.com/z15346183030" target="_blank" rel="noopener">GitHub ↗</a>
+      <span class="sep"></span>
+      <a href="mailto:2210914541@qq.com">Email ↗</a>
+      <span class="sep"></span>
+      <a href="#contact">青岛 · CN</a>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN ================= -->
+  <main class="content">
+
+    <!-- ---------- 01 ABOUT ---------- -->
+    <section id="about">
+      <div class="sec-head rv"><span class="sec-num">01</span><span class="sec-title">关于</span><span class="sec-rule"></span></div>
+
+      <div class="about rv">
+        <p class="lead">我是赵旭，青岛大学纺织科学与工程 2027 届本科生，在海信集团国内营销做 <strong>AI 业务落地</strong>，课余用 vibe coding 独立做了 10+ 个 AI 项目。</p>
+        <p>专业看起来离互联网很远，但纺织本质是<b>商品工程</b> —— 纤维、面料、成本、工艺、供应链全链路，这让我习惯从「一个东西怎么造出来、怎么卖出去、怎么算得过来账」去看问题。</p>
+        <p>我的经历分成两条线。<b>商业线上</b>，我从 0 搭起 500 人的校园推广网络，年流水 50 万+；做过念本纯酸奶的校园分销，单月销售额提升 40%；现在在海信国内营销，跟着胶东机场、青岛地铁这类总额超千万元的大客户项目走完从需求对接到验收交付的全流程。<b>AI 线上</b>，我把「评测 → 归因 → 优化」这套方法用在代码质量评估上，也用它去判断内容能不能被 AI 搜索引擎引用。</p>
+        <p>我关心的不是 AI 能做什么，而是它能替谁的<b>哪一步</b>省掉时间。</p>
+      </div>
+
+      <div class="edu rv">
+        <div class="l">
+          <h4>青岛大学 · 纺织科学与工程</h4>
+          <p>本科 · 连续三年校级二等奖学金 · 山东省励志奖学金</p>
+        </div>
+        <div class="r">
+          <b>GPA 3.55 / 4.0</b>
+          专业排名前 20%
+        </div>
+      </div>
+
+      <div class="stats rv">
+        <div class="stat"><div class="n">10<span>+</span></div><div class="l">独立 AI 项目</div></div>
+        <div class="stat"><div class="n">500<span>+</span></div><div class="l">校园推广社群</div></div>
+        <div class="stat"><div class="n">50<span>万+</span></div><div class="l">年流水</div></div>
+        <div class="stat"><div class="n">千万<span>级</span></div><div class="l">大客户项目</div></div>
+      </div>
+    </section>
+
+    <!-- ---------- 02 EXPERIENCE ---------- -->
+    <section id="exp">
+      <div class="sec-head rv"><span class="sec-num">02</span><span class="sec-title">经历</span><span class="sec-rule"></span></div>
+
+      <div class="tl rv">
+        <div class="tl-item now">
+          <div class="tl-top"><h3>海信集团</h3><span class="tl-role">国内营销 AI 实习生</span><span class="tl-date">2026.06 — 至今 · 青岛</span></div>
+          <ul>
+            <li><b>业务理解：</b>在大客户 BU、GTM、供应链三个部门轮岗，参与胶东机场、青岛地铁等大客户项目（总额超千万元）的交付过程，把一线业务痛点转化为 AI 场景需求。</li>
+            <li><b>AI 业务落地：</b>面向国内营销业务识别效率瓶颈，推动大客户销售 AI 工作平台、AI 物流自追踪、AI 排产规划等场景的智能化落地。</li>
+            <li><b>智能体开发：</b>依托集团自研智能体平台搭建业务智能体，通过接入自研插件实现完整功能闭环。</li>
+          </ul>
+          <div class="tl-tags"><span>大客户销售</span><span>GTM</span><span>供应链</span><span>智能体搭建</span></div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-top"><h3>念本纯酸奶</h3><span class="tl-role">校园分销负责人</span><span class="tl-date">2025.05 — 2026.02</span></div>
+          <ul>
+            <li><b>目标与结果：</b>制定销售计划与预算并对结果负责，累计销售破万，单月销售额提升 40%。</li>
+            <li><b>渠道管理：</b>从 0 开拓并分级管理 5 个院系经销商与学生团队，覆盖 200+ 用户。</li>
+            <li><b>商务谈判：</b>与品牌方协商供货价、活动支持与账期，争取校园推广资源。</li>
+            <li><b>数据运营：</b>用 Excel + Python 监控销售、库存与复购数据并复盘，沉淀选品—进销存—活动全流程 SOP。</li>
+          </ul>
+          <div class="tl-tags"><span>品牌操盘</span><span>渠道管理</span><span>商务谈判</span><span>数据运营</span></div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-top"><h3>校园推广网络</h3><span class="tl-role">创始人</span><span class="tl-date">2024.02 — 2025.03</span></div>
+          <ul>
+            <li><b>从 0 到 1：</b>搭建校园推广网络，对接唯品会「唯享客」、美团、网易 UU 加速器、抖音特效、游戏厂商等品牌官方渠道体系。</li>
+            <li><b>规模：</b>500+ 人学生推广社群，年微信流水 50 万+，净盈利 10 万+。</li>
+            <li><b>机制设计：</b>设计「公域种草 → 社群转化 → 官方后台结算 → 佣金分成」链路，以及学生优先的分佣激励体系。</li>
+            <li><b>持续复盘：</b>周度复盘各项目转化与投入产出，应对多平台政策调整，沉淀可复制的渠道推广方法论。</li>
+          </ul>
+          <div class="tl-tags"><span>0 → 1</span><span>用户增长</span><span>分佣机制</span><span>ROI 复盘</span></div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-top"><h3>FILA</h3><span class="tl-role">品牌校园推广大使</span><span class="tl-date">2026.02 — 至今</span></div>
+          <ul>
+            <li><b>渠道搭建：</b>作为品牌方与校园市场的连接者，搭建 5 院系推广网络，触达 2000+ 学生，策划执行校园主题活动。</li>
+            <li><b>用户洞察：</b>问卷调研 + 深度访谈收集 Z 世代消费洞察，形成用户画像与选品建议，反哺品牌投放策略。</li>
+          </ul>
+          <div class="tl-tags"><span>渠道拓展</span><span>用户洞察</span><span>活动执行</span></div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-top"><h3>省级大学生创新创业训练计划</h3><span class="tl-role">项目负责人</span><span class="tl-date">2025.05 — 2026.05</span></div>
+          <ul>
+            <li>聚乳酸改性耐高温纤维开发，负责立项、资源争取、项目管理与商业化视角。</li>
+            <li>借这个项目完整走了一遍工业化链条：原料价格波动 → 改性工艺 → 测试标准 → 商业化成本。</li>
+          </ul>
+          <div class="tl-tags"><span>项目管理</span><span>资源整合</span><span>商业化分析</span></div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-top"><h3>创客嘉年华</h3><span class="tl-role">核心组织者</span><span class="tl-date">2024.05</span></div>
+          <ul>
+            <li><b>赞助谈判：</b>与外部赞助商谈判争取资金、物料与人力支持，联动校团委、6 个学院学生会与媒体跨部门推进落地。</li>
+            <li><b>活动统筹：</b>统筹 10 余场百人规模活动，管理 50+ 志愿者团队，全渠道触达 5000+ 人次。</li>
+          </ul>
+          <div class="tl-tags"><span>资源协调</span><span>活动策划</span><span>团队管理</span></div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-top"><h3>校创新创业联合会</h3><span class="tl-role">创业服务部长</span><span class="tl-date">2024.05 — 2025.05</span></div>
+          <ul>
+            <li>对接 100+ 创业团队，整合校内外导师、场地与项目资源，推动合作落地。</li>
+          </ul>
+          <div class="tl-tags"><span>资源整合</span><span>社群运营</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- 03 WORK ---------- -->
+    <section id="work">
+      <div class="sec-head rv"><span class="sec-num">03</span><span class="sec-title">项目</span><span class="sec-rule"></span></div>
+
+      <div class="bento rv">
+        <article class="card" data-project="multi-agent-code-studio" tabindex="0">
+          <div class="cat">AI 产品 · 评估体系</div>
+          <h3>Multi-Agent Code Studio <span class="arrow">↗</span></h3>
+          <div class="when">2025.03 — 至今 · 产品负责人 / 独立开发</div>
+          <p>针对「AI 生成代码质量不稳定」，定义多 Agent 协作的产品形态，输出 PRD 与路线图并上线 MVP；建立 LLM-as-a-Judge 五维加权评估 + ICC 一致性检验 + 质量门控，形成「评测 → 归因 → 优化」闭环。</p>
+          <div class="tech"><span>产品定义</span><span>评估体系</span><span>LLM-as-a-Judge</span></div>
+        </article>
+
+        <article class="card" data-project="geo-optimizer" tabindex="0">
+          <div class="cat">AI 内容营销 · 独立开发</div>
+          <h3>GEO Optimizer <span class="arrow">↗</span></h3>
+          <div class="when">2026.06 — 至今</div>
+          <p>设计 6 维度 GEO 评分模型，分析内容被 AI 搜索引擎引用的可能性并输出优化建议；配五维度加权评估 + ICC 校准，支撑评测与决策 —— AI 时代的营销新阵地。</p>
+          <div class="tech"><span>AI 内容营销</span><span>评测体系</span><span>FastAPI</span></div>
+        </article>
+
+        <article class="card" data-project="gaokao-helper" tabindex="0">
+          <div class="cat">AI 应用 · 全栈</div>
+          <h3>AI 智能问答助手（高考择校）<span class="arrow">↗</span></h3>
+          <div class="when">2024.06 — 至今 · 产品负责人 / 独立开发</div>
+          <p>问卷调研（N=150+）+ 深度访谈挖需求，竞品分析定位差异；Python / FastAPI 全栈上线，服务 200+ 用户，搭建行为数据监控驱动迭代，获省级创新创业立项。</p>
+          <div class="tech"><span>用户洞察</span><span>数据驱动</span><span>全栈上线</span></div>
+        </article>
+
+        <article class="card" data-project="ecommerce-agent" tabindex="0">
+          <div class="cat">Workflow 编排 · 独立开发</div>
+          <h3>跨境电商自动筛货上架 Agent <span class="arrow">↗</span></h3>
+          <div class="when">2025.02 — 2025.03</div>
+          <p>分析选品—上架流程中的人工瓶颈，设计「采集 → 筛选 → 内容生成 → 上架」四步自动化工作流；系统化 Prompt 模板一键生成营销文案与商品素材，保证输出可控。</p>
+          <div class="tech"><span>流程优化</span><span>Workflow 编排</span><span>AIGC</span></div>
+        </article>
+      </div>
+
+      <div class="os-head rv"><span>更多开源</span><i></i></div>
+      <div class="os rv">
+        <a href="https://github.com/z15346183030/squeeze" target="_blank" rel="noopener"><span class="nm">squeeze</span><span class="ds">上下文压缩 CLI，省 60–87%</span></a>
+        <a href="https://github.com/z15346183030/depmap" target="_blank" rel="noopener"><span class="nm">depmap</span><span class="ds">Python 模块依赖图，零依赖</span></a>
+        <a href="https://github.com/z15346183030/reverse-engineer-for-everything" target="_blank" rel="noopener"><span class="nm">逆向一切</span><span class="ds">软件逆向工具箱，带证据链</span></a>
+        <a href="https://github.com/z15346183030/daily-forge" target="_blank" rel="noopener"><span class="nm">daily-forge</span><span class="ds">每天复刻一个千星项目</span></a>
+        <a href="https://github.com/z15346183030/llm-as-judge" target="_blank" rel="noopener"><span class="nm">llm-as-judge</span><span class="ds">多评委 ICC 一致性评估</span></a>
+        <a href="https://github.com/z15346183030/prompt-playground" target="_blank" rel="noopener"><span class="nm">prompt-playground</span><span class="ds">纯前端 Prompt 测试台</span></a>
+      </div>
+    </section>
+
+    <!-- ---------- 04 SKILLS ---------- -->
+    <section id="skills">
+      <div class="sec-head rv"><span class="sec-num">04</span><span class="sec-title">技能</span><span class="sec-rule"></span></div>
+
+      <div class="skills rv">
+        <div class="skill">
+          <h3><span class="idx">01</span>AI 应用与产品</h3>
+          <div class="sub">从场景识别到效果评估</div>
+          <ul><li>AI 业务场景识别</li><li>智能体（Agent）搭建</li><li>Prompt 工程</li><li>插件集成</li><li>AI 效果评估体系</li><li>LLM-as-a-Judge</li><li>Workflow 编排</li><li>A/B 测试</li><li>用户调研</li><li>竞品分析</li><li>PRD 撰写</li><li>MVP 验证</li></ul>
+        </div>
+        <div class="skill">
+          <h3><span class="idx">02</span>商业与运营</h3>
+          <div class="sub">把生意真正跑起来</div>
+          <ul><li>销售目标管理</li><li>品牌操盘竞争策略</li><li>渠道与供应商分级管理</li><li>商务谈判</li><li>活动营销与社群运营</li><li>用户增长</li><li>大客户销售流程</li><li>GTM 市场进入</li></ul>
+        </div>
+        <div class="skill">
+          <h3><span class="idx">03</span>数据与工具</h3>
+          <div class="sub">用数据说话</div>
+          <ul><li>Excel（熟练）</li><li>SQL</li><li>Python</li><li>Tableau</li><li>Power BI</li><li>销售 / 库存 / 行为数据监控</li><li>vibe coding</li><li>Claude / ChatGPT / Cursor</li></ul>
+        </div>
+        <div class="skill">
+          <h3><span class="idx">04</span>语言 · 荣誉</h3>
+          <div class="sub">CET-4 439</div>
+          <ul><li>山东省商业挑战赛三等奖</li><li>省级大创项目负责人</li><li>连续三年校二等奖学金</li><li>山东省励志奖学金</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- 05 CONTACT ---------- -->
+    <section id="contact">
+      <div class="contact-wrap">
+        <div class="sec-head rv"><span class="sec-num">05</span><span class="sec-title">联系</span><span class="sec-rule"></span></div>
+        <p class="rv" style="color:var(--muted);font-size:14.5px;max-width:min(58ch,100%)">我正在找<b style="color:var(--text)">营销管培、AI 产品、解决方案</b>方向的校招机会。如果你想找一个懂业务的 AI 产品人，或者一个懂 AI 的生意人，欢迎聊聊。</p>
+
+        <div class="contact-grid rv">
+          <div class="clink email" style="cursor:default">
+            <div><div class="k">Email</div><div class="v">2210914541@qq.com</div></div>
+            <div class="mailwrap">
+              <button class="mailbtn" id="mailBtn" aria-haspopup="true" aria-expanded="false">发邮件给我 <span class="caret">▾</span></button>
+              <div class="mailmenu" id="mailMenu" role="menu">
+                <button data-mail="qq">QQ 邮箱 <span class="h">qq.com</span></button>
+                <button data-mail="163">网易 163 邮箱 <span class="h">163.com</span></button>
+                <button data-mail="126">网易 126 邮箱 <span class="h">126.com</span></button>
+                <button data-mail="gmail">Gmail <span class="h">google</span></button>
+                <button data-mail="outlook">Outlook <span class="h">microsoft</span></button>
+                <button data-mail="default">系统默认邮箱 <span class="h">mailto</span></button>
+                <hr>
+                <button data-mail="copy">复制邮箱地址 <span class="h">copy</span></button>
+              </div>
+            </div>
+          </div>
+          <a class="clink" href="https://github.com/z15346183030" target="_blank" rel="noopener"><div><div class="k">GitHub</div><div class="v">z15346183030</div></div><span class="go">↗</span></a>
+          <a class="clink" href="tel:15346183030"><div><div class="k">Phone</div><div class="v">153 4618 3030</div></div><span class="go">↗</span></a>
+          <div class="clink" style="cursor:default"><div><div class="k">Location</div><div class="v">青岛 · 可远程 / 可出差</div></div></div>
+          <div class="clink" style="cursor:default"><div><div class="k">Available</div><div class="v">2027.07 可到岗</div></div></div>
+        </div>
+      </div>
+
+      <footer>
+        <span>© 2026 赵旭 · 青岛大学 2027 届</span>
+        <span class="mono">LAYOUT REF · BRITTANY CHIANG v4 (MIT)</span>
+      </footer>
+    </section>
+
+  </main>
+</div>
+
+<button class="theme-toggle" id="themeBtn" aria-label="切换深浅色主题">
+  <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
+</button>
+
+<!-- ---------- MODAL ---------- -->
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+  <div class="sheet">
+    <button class="close" id="closeBtn" aria-label="关闭">×</button>
+    <div class="cat" id="sheetCat"></div>
+    <h2 id="sheetTitle"></h2>
+    <div class="when" id="sheetWhen"></div>
+    <p class="desc" id="sheetDesc"></p>
+    <div class="actions" id="sheetActions"></div>
+    <div id="sheetBody"></div>
+    <div class="tech" id="sheetTech"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  /* ---------------- theme ---------------- */
+  var root = document.documentElement;
+  var saved = null;
+  try { saved = localStorage.getItem('resume-theme'); } catch(e){}
+  if (saved) {
+    root.setAttribute('data-theme', saved);
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    root.setAttribute('data-theme','dark');
+  }
+  var meta = document.querySelector('meta[name="theme-color"]');
+  function syncMeta(){
+    if(meta) meta.setAttribute('content', root.getAttribute('data-theme')==='dark' ? '#0c0c0f' : '#faf9f7');
+  }
+  syncMeta();
+  function toggleTheme(){
+    var next = root.getAttribute('data-theme')==='dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('resume-theme', next); } catch(e){}
+    syncMeta();
+  }
+  document.getElementById('themeBtn').addEventListener('click', toggleTheme);
+
+  /* ---------------- progress ---------------- */
+  var bar = document.getElementById('progress');
+  function onScroll(){
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  /* ---------------- reveal ---------------- */
+  var rvs = document.querySelectorAll('.rv');
+  var rvList = Array.prototype.slice.call(rvs);
+  function sweep(){
+    var vh = window.innerHeight;
+    rvList.forEach(function(el){
+      if (el.getBoundingClientRect().top < vh * 0.95) el.classList.add('in');
+    });
+  }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, {threshold:0.06, rootMargin:'0px 0px -40px 0px'});
+    rvList.forEach(function(el){ io.observe(el); });
+  } else {
+    rvList.forEach(function(el){ el.classList.add('in'); });
+  }
+  window.addEventListener('load', function(){ setTimeout(sweep, 60); });
+  window.addEventListener('hashchange', function(){ setTimeout(sweep, 500); });
+
+  /* ---------------- active nav ---------------- */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('#railNav a'));
+  var sections = navLinks.map(function(a){ return document.querySelector(a.getAttribute('href')); }).filter(Boolean);
+  function setActive(){
+    var y = window.scrollY + window.innerHeight * 0.32;
+    var idx = 0;
+    sections.forEach(function(s,i){ if (s.offsetTop <= y) idx = i; });
+    navLinks.forEach(function(a,i){ a.classList.toggle('active', i === idx); });
+  }
+  window.addEventListener('scroll', setActive, {passive:true});
+  setActive();
+
+  /* ---------------- card hover glow ---------------- */
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  cards.forEach(function(card){
+    card.addEventListener('mousemove', function(e){
+      var r = card.getBoundingClientRect();
+      card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+    });
+  });
+
+  /* ---------------- mail menu ---------------- */
+  var EMAIL = '2210914541@qq.com';
+  var mailBtn = document.getElementById('mailBtn');
+  var mailMenu = document.getElementById('mailMenu');
+  var MAIL_URLS = {
+    qq: 'https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=' + EMAIL,
+    '163': 'https://mail.163.com/',
+    '126': 'https://mail.126.com/',
+    gmail: 'https://mail.google.com/mail/?view=cm&fs=1&to=' + EMAIL + '&su=' + encodeURIComponent('来自简历网站的问候'),
+    outlook: 'https://outlook.live.com/mail/0/deeplink/compose?to=' + EMAIL,
+    'default': 'mailto:' + EMAIL
+  };
+  function closeMenu(){ mailMenu.classList.remove('open'); mailBtn.setAttribute('aria-expanded','false'); }
+  mailBtn.addEventListener('click', function(e){
+    e.stopPropagation();
+    var open = mailMenu.classList.toggle('open');
+    mailBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  mailMenu.addEventListener('click', function(e){
+    var b = e.target.closest('button');
+    if (!b) return;
+    var k = b.getAttribute('data-mail');
+    if (k === 'copy') {
+      var done = function(){
+        var old = b.innerHTML;
+        b.innerHTML = '已复制 ✓';
+        setTimeout(function(){ b.innerHTML = old; }, 1600);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(EMAIL).then(done, done);
+      } else {
+        var t = document.createElement('textarea');
+        t.value = EMAIL; document.body.appendChild(t); t.select();
+        try { document.execCommand('copy'); } catch(err){}
+        document.body.removeChild(t); done();
+      }
+    } else if (MAIL_URLS[k]) {
+      window.open(MAIL_URLS[k], '_blank', 'noopener');
+    }
+    closeMenu();
+  });
+  document.addEventListener('click', function(e){
+    if (!mailMenu.contains(e.target) && e.target !== mailBtn) closeMenu();
+  });
+
+  /* ---------------- project data ---------------- */
+  var P = {
+    'multi-agent-code-studio': {
+      cat:'AI 产品 · 评估体系', title:'Multi-Agent Code Studio',
+      when:'2025.03 — 至今 · 产品负责人 / 独立开发',
+      desc:'针对「AI 生成代码质量不稳定」这个真实痛点，定义多 Agent 协作的产品形态，输出 PRD 与路线图并上线 MVP，再用一套可量化的评估体系把「感觉不错」变成「分数可复现」。',
+      links:[['GitHub','https://github.com/z15346183030/multi-agent-code-studio']],
+      sections:[
+        ['我做的判断',[
+          '单次生成质量不稳定，本质不是模型不行，而是<b>缺少审查与迭代环节</b>——真实团队靠 Code Review 和测试兜底，那 AI 团队也应该有。',
+          '所以产品形态不是「更强的代码生成器」，而是<b>一个会自我审查的四人小组</b>：Writer 写、Reviewer 审、Tester 验、Refiner 改。',
+          '评估不能只看「能不能跑」，还要看「好不好维护」——这是 LLM-as-a-Judge 五维加权评估的由来。'
+        ]],
+        ['评估体系',[
+          '<b>五维加权：</b>正确性 30% · 可读性 20% · 效率 20% · 健壮性 15% · 代码风格 15%',
+          '<b>多评委：</b>多个 LLM 独立打分取加权平均，降低单模型偏见',
+          '<b>ICC 一致性检验：</b>评委分歧过大时告警，避免用不可信的分做决策',
+          '<b>质量门控：</b>通过率低于阈值自动触发下一轮 Refine'
+        ]],
+        ['闭环',[
+          '评测发现问题 → 归因到具体维度 → 优化 Prompt 与 Agent 分工 → 再评测，形成「评测 → 归因 → 优化」的可复现循环。'
+        ]]
+      ],
+      tech:['产品定义','PRD','多 Agent','LLM-as-a-Judge','ICC','Python']
+    },
+    'geo-optimizer': {
+      cat:'AI 内容营销 · 独立开发', title:'GEO Optimizer',
+      when:'2026.06 — 至今 · 独立开发',
+      desc:'GEO（Generative Engine Optimization）针对的不是网页排名，而是「被 AI 引用」。当用户向 AI 搜索提问，AI 会从多个来源提取信息——内容能不能成为它的信息源，是可以被拆解和打分的。',
+      links:[['GitHub','https://github.com/z15346183030/geo-optimizer']],
+      sections:[
+        ['6 维度评分模型',[
+          '<b>权威性 25%</b>：引用来源、统计数据、专家观点',
+          '<b>结构化 20%</b>：标题层级、列表、表格、Schema',
+          '<b>完整性 20%</b>：内容深度、FAQ、多种形式',
+          '<b>可引用性 15%</b>：结论句、观点陈述、句长',
+          '<b>时效性 10%</b>：数据新鲜度、引用来源',
+          '<b>原创性 10%</b>：独特观点、独家数据'
+        ]],
+        ['产品设计上的两个取舍',[
+          '基础分析用规则引擎，<b>不需要 API Key 也能出分</b>——降低第一次使用的门槛，这是留存的前提。',
+          'AI 深度分析作为第二层，接 LLM 做语义分析，给更精准的建议——愿意为质量付费的人才用得到。'
+        ]],
+        ['为什么这对营销有意义',[
+          '传统 SEO 的指标（排名、点击）在 AI 搜索里正在失效。品牌要争取的是<b>被引用</b>，而引用是可以优化的：结构、数据、可摘取的结论句。'
+        ]]
+      ],
+      tech:['AI 内容营销','GEO','评测体系','FastAPI','BeautifulSoup']
+    },
+    'gaokao-helper': {
+      cat:'AI 应用 · 全栈', title:'AI 智能问答助手（高考择校）',
+      when:'2024.06 — 至今 · 产品负责人 / 独立开发',
+      desc:'面向高考毕业生的择校助手。需求不是拍脑袋想的：问卷调研 N=150+ 加深度访谈，先确认「信息不对称」才是真痛点，再动手写代码。',
+      links:[['GitHub','https://github.com/z15346183030/gaokao-helper']],
+      sections:[
+        ['需求怎么来的',[
+          '问卷（N=150+）+ 深度访谈挖需求，竞品分析定位差异：已有产品只给分数线和排名，<b>不给真实校园生活</b>。',
+          '所以切入点不是「更好的数据库」，而是「AI 生成的宿舍、食堂、交通画像 + 智能问答」。'
+        ]],
+        ['结果',[
+          'Python / FastAPI 全栈上线，服务 200+ 用户',
+          '搭建行为数据监控驱动迭代，知道用户真正在问什么',
+          '获省级创新创业立项'
+        ]]
+      ],
+      tech:['用户洞察','竞品分析','FastAPI','SQLite','大模型 API']
+    },
+    'ecommerce-agent': {
+      cat:'Workflow 编排 · 独立开发', title:'跨境电商自动筛货上架 Agent',
+      when:'2025.02 — 2025.03 · 独立开发',
+      desc:'分析选品—上架流程中的人工瓶颈，把整条链路拆成「采集 → 筛选 → 内容生成 → 上架」四步，用 Agent 串成可复用的工作流。',
+      links:[['GitHub','https://github.com/z15346183030/ecommerce-agent']],
+      sections:[
+        ['流程拆解',[
+          '<b>采集 Agent：</b>从数据源获取商品信息',
+          '<b>筛选 Agent：</b>6 维度打分筛出优质商品',
+          '<b>内容 Agent：</b>系统化 Prompt 模板一键生成标题、卖点、详情页',
+          '<b>上架 Agent：</b>模拟上架流程并输出结果'
+        ]],
+        ['为什么强调「输出可控」',[
+          '营销文案最怕的不是不好看，而是<b>不可复现</b>。模板化 + 结构化输出，才能保证批量生成时质量不塌方。'
+        ]]
+      ],
+      tech:['流程优化','Workflow 编排','AIGC','Prompt 模板','Pydantic']
+    }
+  };
+
+  /* ---------------- modal ---------------- */
+  var overlay = document.getElementById('overlay');
+  var lastFocus = null;
+
+  function openSheet(key){
+    var p = P[key];
+    if (!p) return;
+    lastFocus = document.activeElement;
+
+    document.getElementById('sheetCat').textContent = p.cat;
+    document.getElementById('sheetTitle').textContent = p.title;
+    document.getElementById('sheetWhen').textContent = p.when || '';
+    document.getElementById('sheetDesc').textContent = p.desc;
+
+    document.getElementById('sheetActions').innerHTML = (p.links||[]).map(function(l){
+      return '<a href="' + l[1] + '" target="_blank" rel="noopener">' + l[0] + ' ↗</a>';
+    }).join('');
+
+    var body = '';
+    (p.sections || []).forEach(function(s){
+      body += '<h4>' + s[0] + '</h4><ul>';
+      s[1].forEach(function(item){ body += '<li>' + item + '</li>'; });
+      body += '</ul>';
+    });
+    document.getElementById('sheetBody').innerHTML = body;
+
+    document.getElementById('sheetTech').innerHTML = (p.tech || []).map(function(t){
+      return '<span>' + t + '</span>';
+    }).join('');
+
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    document.getElementById('closeBtn').focus();
+  }
+
+  function closeSheet(){
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  cards.forEach(function(card){
+    var key = card.getAttribute('data-project');
+    card.addEventListener('click', function(e){
+      if (e.target.tagName === 'A') return;
+      openSheet(key);
+    });
+    card.addEventListener('keydown', function(e){
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openSheet(key); }
+    });
+  });
+
+  document.getElementById('closeBtn').addEventListener('click', closeSheet);
+  overlay.addEventListener('click', function(e){ if (e.target === overlay) closeSheet(); });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape') {
+      if (overlay.classList.contains('open')) closeSheet();
+      closeMenu();
+    }
+    if (e.key === 't' && !e.metaKey && !e.ctrlKey && !e.altKey) {
+      var tag = (document.activeElement.tagName || '').toLowerCase();
+      if (tag === 'input' || tag === 'textarea') return;
+      toggleTheme();
+    }
+  });
+})();
+</script>
+</body>
+</html>
